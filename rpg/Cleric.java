@@ -14,7 +14,11 @@ public class Cleric {
 		System.out.println(this.name+"のHPが最大まで回復した");
 	}
 	public int pray(int sec) {
+<<<<<<< HEAD
 		System.out.println(this.name + "は"+ sec +"秒天に祈った");
+=======
+		System.out.println(this.name + "は"+ sec +"秒、天に祈った");
+>>>>>>> cc2d8ed432d934c4905376fd68c77addc2daf300
 		int recover = new Random().nextInt(3) + sec; //理論上の回復量を乱数を用いて計算
 		int recoverActual = Math.min(this.MAX_MP - this.mp, recover);
 		//this.MAX_MP - this.mpか、 recoverのどちらか低い値がrecoverActualに代入される
